@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Beniam, Andrew"> <!-- additional info -->
+    <meta name="description" content="Website Home Page"> <!-- Briefly describe the page -->
+    <!-- Meta tags are "empty" tags meaning no closing / -->
+    <!-- "meta": tag, "name": attribute, -->
+    <meta name="keywords" content="HTML, CSS, Web Design, Project"> <!-- if u want good SEO, use these tags -->
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAACVBMVEX/AP8AAAClAKUhFWdXAAAA7UlEQVR4nO3SwQ0AMAwCMZr9h84QlXhEvg2MSMrNK9cGEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISHhPO9dKedOqvISQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJPxoAXmgZYMl7Pp2AAAAAElFTkSuQmCC"> <!--Temp Icon-->
+    <!-- VSCode additions: -->
+    <meta charset="UTF-8">  <!-- Specifies the page's character encoding -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  <!--  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- -->
+    <link rel="stylesheet" href="style.css">
+    <title>About</title>
+</head>
+<body>
+    <header>
+        <!-- main navigation bar -->
+        <nav>
+            <a href="index.html"><img src="img/tempicon_crop.PNG" alt="temporary logo icon" width="85px"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a id="paris" href="#">Paris</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Paris</h1>
+        <div>
+            <div class="body">
+                <p>The Eiffel Tower is often considered as Paris’ main attraction and rightfully so due to its all-encompassing presence. It simply offers an overview of Paris like no other.</p>
+                <p>57 metres above ground lies the Eiffel Tower’s first floor. It has a glass flooring that gives the illusion of walking on air. If you ever plan on visiting during the winter or summer, there’s also a public terrace available for resting.</p>
+                <p>Within the Eiffel Tower’s second floor, there are souvenirs shops that offer many kinds of trinkets to take home, such as a miniature Eiffel Tower. Should you ever feel famished, it also offers the Michelin-star Jule Verne restaurant, a Pierre Hermé macaron bar, and various other cuisines.</p>
+                <p>Above 276 metres, near its tippy top, lies the summit. In conjunction with a champagne bar, the view it offers is simply an experience one cannot miss while visiting the Eiffel Tower. Don’t miss the chance to gaze upon the City of Light as its myriads of arrays indulge you while sipping champagne.</p>
+                <p>Nonetheless, the Eiffel Tower is rightfully considered as Paris’ main attraction due to the variety of services it offers.</p>
+            </div>
+            <div class="container">
+                <div class="slideShow">
+                <div class="slideNumber">1 / 5</div>
+                    <img src="img/paris/eiffel.png" style="width:50%">
+                </div>
+            
+                <div class="slideShow">
+                <div class="slideNumber">2 / 5</div>
+                    <img src="img/paris/garnier.png" style="width:50%">
+                </div>
+            
+                <div class="slideShow">
+                <div class="slideNumber">3 / 5</div>
+                    <img src="img/paris/louvre.png" style="width:50%">
+                </div>
+            
+                <div class="slideShow">
+                <div class="slideNumber">4 / 5</div>
+                    <img src="img/paris/orsay.png" style="width:50%">
+                </div>
+            
+                <div class="slideShow">
+                <div class="slideNumber">5 / 5</div>
+                    <img src="img/paris/triomphe.png" style="width:50%">
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                <a class="next" onclick="moveSlide(1)">&#10095;</a>
+            
+                <!-- Image text -->
+                <div class="caption-container">
+                <p id="caption"></p>
+                </div>
+            
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="gallery cursor" src="img/paris/eiffel.png" style="width:100%" onclick="currentSlide(1)" alt="The Eiffel Tower">
+                    </div>
+                    <div class="column">
+                        <img class="gallery cursor" src="img/paris/garnier.png" style="width:100%" onclick="currentSlide(2)" alt="Palais Garnier">
+                    </div>
+                    <div class="column">
+                        <img class="gallery cursor" src="img/paris/louvre.png" style="width:100%" onclick="currentSlide(3)" alt="The Louvre">
+                    </div>
+                    <div class="column">
+                        <img class="gallery cursor" src="img/paris/orsay.png" style="width:100%" onclick="currentSlide(4)" alt="Orsay Museum">
+                    </div>
+                    <div class="column">
+                        <img class="gallery cursor" src="img/paris/triomphe.png" style="width:100%" onclick="currentSlide(5)" alt="Arc de Triomphe">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li>Copyright&nbsp;&copy;&nbsp;2023 Voyager 2 Ltd.</li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">About Us</a></li>
+            <li>
+                <section class="grid-container">
+                    <div class="grid-item">
+                        <label for="theme">Choose a theme:</label>
+                    </div>
+                    <div class="grid-item">
+                        <select name="theme" id="mode">
+                            <option value="default">Default</option>
+                            <option value="dark">Dark Mode</option>
+                            <option value="light">Light Mode</option>
+                            <option value="color-blind">Color Blind Mode</option>
+                        </select>
+                    </div>
+                </section>
+            </li>
+            <li><a href="#"><img src="img/socials/twitter.png" alt="twitter logo" width="32px"></a></li>
+            <li><a href="#"><img src="img/socials/facebook.png" alt="facebook logo" width="32px"></a></li>
+            <li><a href="#"><img src="img/socials/youtube.png" alt="youtube logo" width="32px"></a></li>
+            <li><a href="#"><img src="img/socials/instagram.png" alt="instagram logo" width="32px"></a></li>
+        </ul>
+    </footer>
+    <script src="main.js">
+    </script>
+</body>
+</html> <!-- closing tag using / forward slash /-->
