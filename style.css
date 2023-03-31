@@ -1,10 +1,17 @@
 * {
     box-sizing: border-box;
 }
+/* html styles */
+html {
+    height: 100%;
+}
 /* body styles */
 body{
     margin: 0;
     font: 1em Arial, sans-serif;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 /* header styles */
 /* header{} */
@@ -69,19 +76,30 @@ main{
 /* style for footer element */
 
 footer {
+    margin-top: auto;
     background-color: aliceblue;
     border: 2px solid lightblue;
     color: #0078b3;
     font-size: small;
     height: 100px;
     width: 100%;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
 }
+footer div.footer-links ul{
+
+}
+div.footer-links ul li {
+
+}
+
 
 /* style for the unordered list in the footer element */
 
 footer ul {
 
-    text-align: right;
+    /* text-align: right; */
 }
 
 /* style for the items of the unordered list in the footer element */
