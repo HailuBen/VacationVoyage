@@ -6,6 +6,11 @@
 
 .body p {
     margin-top: 0px;
+    font-size: large;
+}
+
+.description {
+    display: none;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
