@@ -45,7 +45,7 @@ function showSlides(n) {
         gallery[i].className = gallery[i].className.replace(" active", "");
     }
 
-    // This will display, in block style, the corresponding slide based on the index value.
+    // This will display, in block style, the corresponding slide and description based on the index value.
     slides[slideIndex-1].style.display = "block";
     description[slideIndex-1].style.display = "block";
 
