@@ -9,10 +9,12 @@
 
 /* style for p in the description container */
 .body p {
+    padding: 8px;
     margin-top: 0px;
+    margin-bottom: 0px;
     font-size: large;
     color: aliceblue;
-    text-shadow: 1px 1px 2px #003c5a;
+    text-shadow: 2px 2px 4px #003c5a;
 }
 
 /* style to hide the descriptions for javascript purposes */
