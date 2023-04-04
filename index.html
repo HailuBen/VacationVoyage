@@ -12,52 +12,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">  <!--  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- -->
     <title>Voyages2Go - Home</title> <!-- different on each page (if wanted)-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
     <body> 
         <header>
             <!-- main navigation bar -->
             <nav>
-                <a href="index.html"><img src="img/tempicon_crop.PNG" alt="temporary logo icon" width="85px"></a>
+                <a href="index.html"><img src="img/logo-color.png" alt="temporary logo icon" width="85px"></a>
                 <ul>
                     <li><a id="home" href="index.html">Home</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="paris.html">Paris</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/paris.html">Paris</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <h3>Voyager 2 Presents:</h3>
             <h1>Voyages2Go!</h1>
-    
+            
+            <div class="img-div">
+                <img src="img/passport-g956a3cfe5_1920.jpg" alt="" width="600px">
+            </div>
         </main>
+        <br>
         <footer>
-            <ul>
-                <li>Copyright&nbsp;&copy;&nbsp;2023 Voyager 2 Ltd.</li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">About Us</a></li>
-                <li>
-                    <section class="grid-container">
-                        <div class="grid-item">
-                            <label for="theme">Choose a theme:</label>
-                        </div>
-                        <div class="grid-item">
-                            <select name="theme" id="mode">
-                                <option value="default">Default</option>
-                                <option value="dark">Dark Mode</option>
-                                <option value="light">Light Mode</option>
-                                <option value="color-blind">Color Blind Mode</option>
-                            </select>
-                        </div>
-                    </section>
-                </li>
-                <li><a href="#"><img src="img/socials/twitter.png" alt="twitter logo" width="32px"></a></li>
-                <li><a href="#"><img src="img/socials/facebook.png" alt="facebook logo" width="32px"></a></li>
-                <li><a href="#"><img src="img/socials/youtube.png" alt="youtube logo" width="32px"></a></li>
-                <li><a href="#"><img src="img/socials/instagram.png" alt="instagram logo" width="32px"></a></li>
-            </ul>
+            <div id="footer-links">
+                <ul>
+                    <li>Copyright&nbsp;&copy;&nbsp;2023 Voyager 2 Ltd.</li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div id="footer-social">
+                <ul>
+                    <li>
+                        <section class="grid-container">
+                            <div class="grid-item">
+                                <label for="theme">Choose a theme:</label>
+                            </div>
+                            <div class="grid-item">
+                                <select name="theme" id="mode">
+                                    <option value="default">Default</option>
+                                    <option value="dark">Dark Mode</option>
+                                    <option value="light">Light Mode</option>
+                                    <option value="color-blind">Color Blind Mode</option>
+                                </select>
+                            </div>
+                        </section>
+                    </li>
+                    <li><a href="#"><img src="img/socials/twitter.png" alt="twitter logo" width="32px"></a></li>
+                    <li><a href="#"><img src="img/socials/facebook.png" alt="facebook logo" width="32px"></a></li>
+                    <li><a href="#"><img src="img/socials/youtube.png" alt="youtube logo" width="32px"></a></li>
+                    <li><a href="#"><img src="img/socials/instagram.png" alt="instagram logo" width="32px"></a></li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html> <!-- closing tag using / forward slash /-->

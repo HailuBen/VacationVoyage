@@ -1,22 +1,31 @@
 * {
     box-sizing: border-box;
 }
+/* html styles */
+html {
+    height: 100%;
+}
 /* body styles */
 body{
     margin: 0;
-    font: 1em "Arial Regular";
+    font: 1em Arial, sans-serif;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 /* header styles */
 /* header{} */
 
 /* nav bar styles */
 nav {
-    border: 4px solid lightblue;
+    border: 4px solid #add8e6;
     border-left: none;
     border-right: none;
-    background-color: aliceblue;
+    background-color: #f0f8ff;
     width: 100%;
-    height: 70px;
+    height: 85px;
+    display: flex;
+    align-items: center;
 }
 nav img{
     display: inline;
@@ -27,7 +36,7 @@ nav img{
     margin: 0 30px;
 }
 nav img:hover{
-    border: 2px solid darksalmon;
+    border: 2px solid #e9967a;
     border-radius: 10%;
 }
 nav ul {
@@ -51,7 +60,7 @@ nav li a:hover {
     transition: .3s;
 }
 nav li a:active{
-    background-color: azure;
+    background-color: #f0ffff;
 }
 ul li {
     display: inline;
@@ -69,19 +78,30 @@ main{
 /* style for footer element */
 
 footer {
+    margin-top: auto;
     background-color: aliceblue;
     border: 2px solid lightblue;
     color: #0078b3;
     font-size: small;
     height: 100px;
     width: 100%;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
 }
+footer div.footer-links ul{
+
+}
+div.footer-links ul li {
+
+}
+
 
 /* style for the unordered list in the footer element */
 
 footer ul {
 
-    text-align: right;
+    /* text-align: right; */
 }
 
 /* style for the items of the unordered list in the footer element */
