@@ -22,6 +22,10 @@
     display: none;
 }
 
+div#funFact {
+    display: none;
+}
+
 /* Position the image container (needed to position the left and right arrows) */
 .container {
     position: relative;
