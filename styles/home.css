@@ -25,6 +25,7 @@
 /* Position the image container (needed to position the left and right arrows) */
 .container {
     position: relative;
+    width: 70%;
 }
 
 /* Hide the images by default */
@@ -34,7 +35,10 @@
 
 /* slideshow imagestyles */
 .slideImg{
-    width: 50%;
+    width: 70%;
+    width: 692px;
+    aspect-ratio: auto 692 / 389;
+    height: 389px;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -60,7 +64,7 @@
 
 /* Position the "next button" to the right */
 .next {
-    right: 50%;
+    right: 30%;
     border-radius: 3px 0 0 3px;
 }
 
@@ -85,10 +89,12 @@
     background-color: #003c5a;
     padding: 2px 16px;
     color: white;
+    width: inherit;
 }
 
 .row {
-    margin-right: 50%;
+    margin-right: 30%;
+    width: initial;
 }
 
 .row:after {
@@ -107,6 +113,14 @@
     width: 96px;
     aspect-ratio: auto 96 / 64;
     height: 64px;
+
+    width: 87px;
+    aspect-ratio: auto 100 / 70;
+    height: 50px;
+
+    width: 137px;
+    aspect-ratio: auto 137 / 80;
+    height: 80px;
 }
 
 /* Add a transparency effect for thumnbail images */
