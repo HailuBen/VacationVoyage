@@ -103,6 +103,12 @@
     width: 20%;
 }
 
+.column img{
+    width: 96px;
+    aspect-ratio: auto 96 / 64;
+    height: 64px;
+}
+
 /* Add a transparency effect for thumnbail images */
 .gallery {
     opacity: 0.6;
