@@ -67,6 +67,7 @@ ul li {
     list-style: none;
     /* margin-left: 20px; */
 }
+
 a#home, a#contact, a#about {
     color: #003c5a;
 }
@@ -113,10 +114,16 @@ a#home, a#contact, a#about {
     transition: .3s;
 }
 
+
+a#home, a#contact, a#about, a#paris {
+    color: #003c5a;
+}
+
 /* main styles */
 main{
     margin: 0 80px;
 }
+
 
 /* style for passport image on homepage */
 .img-div img{
@@ -124,6 +131,7 @@ main{
 }
 
 /* style for footer element */
+
 footer {
     margin-top: auto;
     background-color: aliceblue;
