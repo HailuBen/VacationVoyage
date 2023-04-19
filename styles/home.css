@@ -39,6 +39,7 @@
     width: 692px;
     aspect-ratio: auto 692 / 389;
     height: 389px;
+    border: 5px solid #003c5a;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
