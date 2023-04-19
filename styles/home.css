@@ -35,11 +35,14 @@
 
 /* slideshow imagestyles */
 .slideImg{
-    width: 70%;
+    /* width: 70%;
     width: 692px;
     aspect-ratio: auto 692 / 389;
-    height: 389px;
+    height: 389px; */
     border: 5px solid #003c5a;
+    width: 756px;
+    aspect-ratio: auto 756 / 453;
+    height: 453px;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -65,7 +68,7 @@
 
 /* Position the "next button" to the right */
 .next {
-    right: 30%;
+    right: 24%;
     border-radius: 3px 0 0 3px;
 }
 
@@ -81,6 +84,7 @@
     padding: 8px 12px;
     position: absolute;
     top: 0;
+    background-color: #0077b363;
 }
 
 /* Container for image text */
@@ -90,12 +94,14 @@
     background-color: #003c5a;
     padding: 2px 16px;
     color: white;
-    width: inherit;
+    width: 756px;
 }
 
 .row {
-    margin-right: 30%;
-    width: initial;
+    padding-top: 6px;
+    width: 764px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .row:after {
@@ -120,9 +126,9 @@
     aspect-ratio: auto 100 / 70;
     height: 50px; */
 
-    width: 137px;
-    aspect-ratio: auto 137 / 80;
-    height: 80px;
+    width: 120px;
+    aspect-ratio: auto 120 / 70;
+    height: 70px;
 }
 
 /* Add a transparency effect for thumnbail images */
