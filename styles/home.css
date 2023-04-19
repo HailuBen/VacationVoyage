@@ -3,8 +3,8 @@
     margin-left: 16px;
     float: right;
     width: 45%;
-    background-color: lightblue;
-    box-shadow: 8px 8px #0078b3, 16px 16px #003c5a;
+    background-color: #003c5a;
+    box-shadow: 8px 8px #0078b3, 16px 16px lightblue;
 }
 
 /* style for p in the description container */
