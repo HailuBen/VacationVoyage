@@ -221,6 +221,11 @@ footer ul li div {
     height: 16px;
 }
 
+.dark-mode {
+    background-color: rgba(28,31,32,1);
+    border-color: rgb(31,85,103);
+}
+
 @media (max-width:900px){
     nav{
         display: block;

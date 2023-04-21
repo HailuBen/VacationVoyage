@@ -55,3 +55,29 @@ function showSlides(n) {
     // This will set the caption of the slideshow to the corresponding alt text of the current gallery selection.
     captionText.innerHTML = gallery[slideIndex-1].alt;
 }
+
+function themeSelector() {
+    defaultMode();
+    var option = document.getElementById("mode").value;
+    if(option == "dark"){
+        darkMode();
+    }
+}
+
+function defaultMode() {
+    var elements = document.getElementsByClassName("box");
+    for(i = 0; i < elements.length; i++){
+        if(elements[i].classList.contains("dark-mode")){
+            elements[i].classList.remove("dark-mode");
+        }
+    }
+}
+
+function darkMode() {
+    var elements = document.getElementsByClassName("box");
+    for(i = 0; i < elements.length; i++){
+        if(!elements[i].classList.contains("dark-mode")){
+            elements[i].classList.add("dark-mode");
+        }
+    }
+}
