@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="../styles/destinations.css">
     <title>Toronto</title>
 </head>
-<body>
+<body id="body">
     <header>
         <!-- main navigation bar -->
-        <nav>
+        <nav class="box">
             <a href="../index.html"><img src="../img/logo-color.png" alt="Vacation Voyage icon" width="85px"></a>
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -44,15 +44,15 @@
         <h1>Toronto</h1>
         <div>
             <div class="body">
-                <div class="description">
+                <div class="description shadow">
                     <p>The CN Tower is a must-visit attraction in Toronto, Canada, and is one of the most iconic landmarks in the city. Standing at a height of 553 meters, the tower is the tallest freestanding structure in the Western Hemisphere and offers breathtaking views of the city and Lake Ontario from its observation deck. Visitors can take an elevator to the top of the tower and enjoy a 360-degree view of the surrounding area, including the Toronto Islands, the downtown skyline, and the Niagara Escarpment. </p>
                     <p>The CN Tower also features a glass floor, where visitors can stand and look down at the city below, as well as a revolving restaurant that offers fine dining with stunning views. For those seeking an adrenaline rush, there's the EdgeWalk, a hands-free walk around the outside edge of the tower's main pod. The CN Tower is an unforgettable experience that offers visitors a unique perspective of Toronto and its surroundings.- <span><a class="a-link" href="https://bard.google.com">Bard</a></span></p>
                 </div>
-                <div class="description">
+                <div class="description shadow">
                     <p>Casa Loma is a majestic castle located in Toronto, Canada, and is one of the city's top tourist attractions. Built in 1914, this Gothic Revival-style castle features 98 rooms, secret passages, and towers with stunning views of the city. Visitors can explore the castle's grand halls and richly decorated rooms, including the elegant ballroom, the library, and the conservatory. The castle also houses a collection of antique furnishings, artwork, and artifacts from the early 1900s. </p>
                     <p>In addition to the castle itself, visitors can wander through the beautiful gardens that surround it, which include fountains, sculptures, and a greenhouse. Casa Loma also hosts various events throughout the year, such as haunted house tours during Halloween and a winter wonderland experience during the holiday season. Whether you're interested in history, architecture, or just want to experience the grandeur of a castle, Casa Loma is a must-visit destination in Toronto.- <span><a class="a-link" href="https://bard.google.com">Bard</a></span></p>
                 </div>
-                <div class="description">
+                <div class="description shadow">
                     <p>The Royal Ontario Museum, also known as the ROM, is a world-renowned museum located in Toronto, Canada. With over 40 galleries, the ROM is one of the largest museums in North America and is home to an extensive collection of artifacts and specimens from around the world. Visitors can explore exhibits on topics such as natural history, world cultures, art, and science. </p>
                     <p>The museum's highlight is the Michael Lee-Chin Crystal, a striking addition to the original building designed by architect Daniel Libeskind. The Crystal houses contemporary galleries, a gift shop, and a restaurant with views of Queen's Park. The ROM also offers a range of guided tours and educational programs for visitors of all ages. Whether you're interested in dinosaurs, ancient Egypt, or contemporary art, the Royal Ontario Museum has something for everyone and is a must-visit destination in Toronto.- <span><a class="a-link" href="https://bard.google.com">Bard</a></span></p>
                 </div>
@@ -143,7 +143,7 @@
 
         <br><br><br>
     </main>
-    <footer>
+    <footer class="box">
         <div id="footer-links">
             <ul>
                 <li>Copyright&nbsp;&copy;&nbsp;2023 Voyager 2 Ltd.</li>
@@ -160,7 +160,7 @@
                             <label for="theme">Choose a theme:</label>
                         </div>
                         <div class="grid-item">
-                            <select name="theme" id="mode">
+                            <select name="theme" id="mode" onchange="themeSelector()">
                                 <option value="default">Default</option>
                                 <option value="dark">Dark Mode</option>
                                 <option value="light">Light Mode</option>

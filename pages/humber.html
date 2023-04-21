@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="../styles/destinations.css">
     <title>Humber</title>
 </head>
-<body>
+<body id="body">
     <header>
         <!-- main navigation bar -->
-        <nav>
+        <nav class="box">
             <a href="../index.html"><img src="../img/logo-color.png" alt="Vacation Voyage icon" width="85px"></a>
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -44,31 +44,31 @@
         <h1>Humber College</h1>
         <div>
             <div class="body">
-                <div class="description">
+                <div class="description shadow">
                     <p>Humber is a dynamic and innovative institution that is committed to providing students with the skills and knowledge they need to succeed in the workforce. The college has a strong focus on experiential learning, and students have the opportunity to participate in a variety of hands-on learning opportunities, such as internships, and co-op placements.</p>
                     <p>Humber is also a welcoming and inclusive community, and the college is committed to providing students with the support they need to succeed. The college offers a variety of student services, such as academic advising, financial aid, and student life programs.</p>
                     <p>Humber College is a great choice for students who are looking for a high-quality education in a supportive and inclusive environment. The college offers a wide range of programs, and students have the opportunity to participate in a variety of hands-on learning opportunities. Humber is also a welcoming and inclusive community, and the college is committed to providing students with the support they need to succeed.</p>
                     <p>If you are a student considering attending Humber College, I encourage you to visit the college and learn more about what it has to offer. Humber is a great place to start your future.- <span><a class="a-link" href="https://bard.google.com">Bard</a></span></p>
                 </div>
-                <div class="description">
+                <div class="description shadow">
                     <p>Humber is a dynamic and innovative institution that is committed to providing students with the skills and knowledge they need to succeed in the workforce. The college has a strong focus on experiential learning, and students have the opportunity to participate in a variety of hands-on learning opportunities, such as internships, and co-op placements.</p>
                     <p>Humber is also a welcoming and inclusive community, and the college is committed to providing students with the support they need to succeed. The college offers a variety of student services, such as academic advising, financial aid, and student life programs.</p>
                     <p>Humber College is a great choice for students who are looking for a high-quality education in a supportive and inclusive environment. The college offers a wide range of programs, and students have the opportunity to participate in a variety of hands-on learning opportunities. Humber is also a welcoming and inclusive community, and the college is committed to providing students with the support they need to succeed.</p>
                     <p>If you are a student considering attending Humber College, I encourage you to visit the college and learn more about what it has to offer. Humber is a great place to start your future.- <span><a class="a-link" href="https://bard.google.com">Bard</a></span></p>
                 </div>
-                <div class="description">
+                <div class="description shadow">
                     <p>Humber is a dynamic and innovative institution that is committed to providing students with the skills and knowledge they need to succeed in the workforce. The college has a strong focus on experiential learning, and students have the opportunity to participate in a variety of hands-on learning opportunities, such as internships, and co-op placements.</p>
                     <p>Humber is also a welcoming and inclusive community, and the college is committed to providing students with the support they need to succeed. The college offers a variety of student services, such as academic advising, financial aid, and student life programs.</p>
                     <p>Humber College is a great choice for students who are looking for a high-quality education in a supportive and inclusive environment. The college offers a wide range of programs, and students have the opportunity to participate in a variety of hands-on learning opportunities. Humber is also a welcoming and inclusive community, and the college is committed to providing students with the support they need to succeed.</p>
                     <p>If you are a student considering attending Humber College, I encourage you to visit the college and learn more about what it has to offer. Humber is a great place to start your future.- <span><a class="a-link" href="https://bard.google.com">Bard</a></span></p>
                 </div>
-                <div class="description">
+                <div class="description shadow">
                     <p>Humber is a dynamic and innovative institution that is committed to providing students with the skills and knowledge they need to succeed in the workforce. The college has a strong focus on experiential learning, and students have the opportunity to participate in a variety of hands-on learning opportunities, such as internships, and co-op placements.</p>
                     <p>Humber is also a welcoming and inclusive community, and the college is committed to providing students with the support they need to succeed. The college offers a variety of student services, such as academic advising, financial aid, and student life programs.</p>
                     <p>Humber College is a great choice for students who are looking for a high-quality education in a supportive and inclusive environment. The college offers a wide range of programs, and students have the opportunity to participate in a variety of hands-on learning opportunities. Humber is also a welcoming and inclusive community, and the college is committed to providing students with the support they need to succeed.</p>
                     <p>If you are a student considering attending Humber College, I encourage you to visit the college and learn more about what it has to offer. Humber is a great place to start your future.- <span><a class="a-link" href="https://bard.google.com">Bard</a></span></p>
                 </div>
-                <div class="description">
+                <div class="description shadow">
                     <p>Humber is a dynamic and innovative institution that is committed to providing students with the skills and knowledge they need to succeed in the workforce. The college has a strong focus on experiential learning, and students have the opportunity to participate in a variety of hands-on learning opportunities, such as internships, and co-op placements.</p>
                     <p>Humber is also a welcoming and inclusive community, and the college is committed to providing students with the support they need to succeed. The college offers a variety of student services, such as academic advising, financial aid, and student life programs.</p>
                     <p>Humber College is a great choice for students who are looking for a high-quality education in a supportive and inclusive environment. The college offers a wide range of programs, and students have the opportunity to participate in a variety of hands-on learning opportunities. Humber is also a welcoming and inclusive community, and the college is committed to providing students with the support they need to succeed.</p>
@@ -149,7 +149,7 @@
         <br><br><br>
         
     </main>
-    <footer>
+    <footer class="box">
         <div id="footer-links">
             <ul>
                 <li>Copyright&nbsp;&copy;&nbsp;2023 Voyager 2 Ltd.</li>
@@ -166,7 +166,7 @@
                             <label for="theme">Choose a theme:</label>
                         </div>
                         <div class="grid-item">
-                            <select name="theme" id="mode">
+                            <select name="theme" id="mode" onchange="themeSelector()">
                                 <option value="default">Default</option>
                                 <option value="dark">Dark Mode</option>
                                 <option value="light">Light Mode</option>

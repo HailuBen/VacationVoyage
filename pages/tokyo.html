@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="../styles/destinations.css">
     <title>Tokyo</title>
 </head>
-<body>
+<body id="body">
     <header>
         <!-- main navigation bar -->
-        <nav>
+        <nav class="box">
             <a href="../index.html"><img src="../img/logo-color.png" alt="Vacation Voyage icon" width="85px"></a>
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -44,35 +44,21 @@
         <h1>Tokyo</h1>
         <div>
             <div class="body">
-                <div class="description">
+                <div class="description shadow">
                     <p>Tokyo Tower is a well-known landmark and one of the most popular tourist destinations in Tokyo, Japan. This iconic tower was built in 1958 and stands at 333 meters tall. It offers breathtaking panoramic views of the city from its observation deck, which is located at a height of 150 meters. </p>
                     
                     <p>The tower is also home to restaurants, gift shops, and other attractions, making it a great place to spend an afternoon or evening. Additionally, the tower is illuminated at night and is a stunning sight to see from many parts of the city. If you're visiting Tokyo, Tokyo Tower is definitely worth a visit to experience the city from above and to get a taste of Tokyo's unique culture and history.- <span><a class="a-link" href="https://bard.google.com">Bard</a></span></p>
                 </div>
-                <div class="description">
+                <div class="description shadow">
                     <p>The Ghibli Museum in Tokyo is a must-visit destination for fans of Japanese animation and the works of Studio Ghibli. The museum features a wide range of exhibits and interactive displays that showcase the creative process behind some of the studio's most beloved films, including "My Neighbor Totoro," "Spirited Away," and "Princess Mononoke." </p>
                     
                     <p>Visitors can explore a replica of director Hayao Miyazaki's workspace, watch short films that are exclusive to the museum, and view a variety of original artwork and animation cells. The museum also houses a bookstore, gift shop, and a cafe that serves snacks and refreshments inspired by the films. As the Ghibli Museum is a popular attraction, it is recommended to book tickets in advance to ensure entry.- <span><a class="a-link" href="https://bard.google.com">Bard</a></span></p>
                 </div>
-                <div class="description">
+                <div class="description shadow">
                     <p>Meiji Jingu Shrine is a serene and spiritual oasis located in the heart of Tokyo, Japan. This Shinto shrine is dedicated to the deified spirits of Emperor Meiji and his wife, Empress Shoken, and was built in their honor in 1920. Visitors to the shrine can enjoy a peaceful stroll through the lush forested grounds that surround it, passing through the iconic torii gates and along winding paths that lead to the main shrine buildings.</p>
 
                     <p>The architecture of the shrine is impressive, featuring traditional Japanese design elements such as sloping roofs and intricate wood carvings. The shrine is also a popular destination for Japanese weddings, and visitors may be lucky enough to witness a ceremony taking place. Meiji Jingu Shrine is a must-visit attraction for anyone interested in Japanese culture and history, and it offers a peaceful escape from the hustle and bustle of Tokyo's urban landscape.- <span><a class="a-link" href="https://bard.google.com">Bard</a></span></p>
                 </div>
-                <!-- <div class="description">
-                    <p>The Grand Canyon is a steep-sided canyon carved by the Colorado River over millions of years. It is 277 miles (446 km) long, up to 18 miles (29 km) wide and attains a depth of over a mile (6,093 feet or 1,857 meters). The canyon and adjacent rim are contained within Grand Canyon National Park, a United States National Park that is managed by the National Park Service. President Theodore Roosevelt was a major proponent of preservation of the Grand Canyon area, and visited it on numerous occasions to hunt and enjoy the scenery.</p>
-
-                    <p>The Grand Canyon is one of the Seven Natural Wonders of the World and is visited by millions of people each year. It is a popular tourist destination for hiking, camping, rafting, and sightseeing. The canyon is also home to a variety of plants and animals, including the canyon wren, the mule deer, and the Colorado River cutthroat trout.</p>
-                    
-                    <p>The Grand Canyon is a place of great beauty and wonder. It is a place where people can come to experience the power of nature and the beauty of the American Southwest.</p>
-                </div>
-                <div class="description">
-                    <p>The Grand Canyon is a steep-sided canyon carved by the Colorado River over millions of years. It is 277 miles (446 km) long, up to 18 miles (29 km) wide and attains a depth of over a mile (6,093 feet or 1,857 meters). The canyon and adjacent rim are contained within Grand Canyon National Park, a United States National Park that is managed by the National Park Service. President Theodore Roosevelt was a major proponent of preservation of the Grand Canyon area, and visited it on numerous occasions to hunt and enjoy the scenery.</p>
-
-                    <p>The Grand Canyon is one of the Seven Natural Wonders of the World and is visited by millions of people each year. It is a popular tourist destination for hiking, camping, rafting, and sightseeing. The canyon is also home to a variety of plants and animals, including the canyon wren, the mule deer, and the Colorado River cutthroat trout.</p>
-                    
-                    <p>The Grand Canyon is a place of great beauty and wonder. It is a place where people can come to experience the power of nature and the beauty of the American Southwest.</p>
-                </div> -->
             </div>
             <div class="container">
                 <div class="slideShow">
@@ -89,16 +75,6 @@
                 <div class="slideNumber">3 / 3</div>
                     <img class="slideImg" src="../img/Toyko/meiji-jingu-shrine-main-complex-loving-toyko_com.jpg" alt="A Picture of the Meiji Jingu Shrine in Tokyo, Japan" style="width:50%">
                 </div>
-            
-                <!-- <div class="slideShow">
-                <div class="slideNumber">4 / 5</div>
-                    <img class="slideImg" src="../img/paris/orsay.png" style="width:50%">
-                </div>
-            
-                <div class="slideShow">
-                <div class="slideNumber">5 / 5</div>
-                    <img class="slideImg" src="../img/paris/triomphe.png" style="width:50%">
-                </div> -->
             
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
@@ -120,12 +96,6 @@
                     <div class="column">
                         <img class="gallery cursor" src="../img/Toyko/meiji-jingu-shrine-main-complex-loving-toyko_com.jpg" alt="A Picture of the Meiji Jingu Shrine in Tokyo, Japan" style="width:100%;" onclick="currentSlide(3)">
                     </div>
-                    <!-- <div class="column">
-                        <img class="gallery cursor" src="../img/paris/orsay.png" style="width:100%; height:79px" onclick="currentSlide(4)" alt="Orsay Museum">
-                    </div>
-                    <div class="column">
-                        <img class="gallery cursor" src="../img/paris/triomphe.png" style="width:100%; height:79px" onclick="currentSlide(5)" alt="Arc de Triomphe">
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -146,7 +116,7 @@
 
         <br><br><br>
     </main>
-    <footer>
+    <footer class="box">
         <div id="footer-links">
             <ul>
                 <li>Copyright&nbsp;&copy;&nbsp;2023 Voyager 2 Ltd.</li>
@@ -163,7 +133,7 @@
                             <label for="theme">Choose a theme:</label>
                         </div>
                         <div class="grid-item">
-                            <select name="theme" id="mode">
+                            <select name="theme" id="mode" onchange="themeSelector()">
                                 <option value="default">Default</option>
                                 <option value="dark">Dark Mode</option>
                                 <option value="light">Light Mode</option>

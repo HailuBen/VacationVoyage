@@ -39,7 +39,7 @@ nav img{
     border: 2px solid aliceblue;
     transition: .3s;
     border-radius: 50%;
-    margin: 0 20%;
+    margin: 0 30px;
 }
 nav img:hover{
     border: 2px solid #e9967a;
@@ -53,8 +53,7 @@ nav li {
     line-height: 2rem;
 }
 nav li a {
-    /* padding: 15px 40px; */
-    padding: 1rem 2rem;
+    padding: 15px 40px;
 	text-decoration: none;
 	font-weight: bold;
 	color: #0078b3;
@@ -82,10 +81,8 @@ a#home, a#contact, a#about, a#paris, a#grandcanyon, a#rome, a#toronto, a#tokyo, 
 /* dropdown menu styles */
 .dropbtn {
     background-color: aliceblue;
-    border: 2px solid aliceblue;
     color: #0078b3;
     padding: 15px;
-    padding: 1rem;
     font-size: 1em;
     font-weight: 600;
     border: none;
@@ -93,20 +90,17 @@ a#home, a#contact, a#about, a#paris, a#grandcanyon, a#rome, a#toronto, a#tokyo, 
   .dropdown {
     position: relative;
     display: inline-block;
-    border: 2px solid aliceblue;
 }
   .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    border: 2px solid #add8e6;
     z-index: 1;
 }
   .dropdown-content a {
     color: #0078b3;
-    border: 2px solid aliceblue;
-    padding: 0 1rem;
+    padding: 0px 10px;
     text-decoration: none;
     display: block;
     text-align: center;
@@ -116,16 +110,13 @@ a#home, a#contact, a#about, a#paris, a#grandcanyon, a#rome, a#toronto, a#tokyo, 
   .dropdown-content a:hover {
     background-color: #ddd;
 }
-.dropdown:hover{
-    /* border: 2px solid lightgoldenrodyellow; */
-    border: 2px solid #add8e6
-}
   .dropdown:hover .dropdown-content {
     display: block;
 }
   .dropdown:hover .dropbtn {
     color: darksalmon;
 	background-color: white; 
+    border: 2px solid #add8e6;
     transition: .3s;
 }
 
@@ -209,6 +200,7 @@ main{
     box-shadow: 8px 8px #0078b3, 16px 16px #003c5a;
     padding:20px;
     padding-top: 10px;
+    width: ;
 }
 
 /* style for footer element */
@@ -306,6 +298,11 @@ footer ul li div {
     color: white;
 }
 
+.dark-shadow {
+    background-color: rgb(0, 48, 72);
+    box-shadow: 8px 8px rgb(0, 96, 143), 16px 16px rgb(27, 73, 88);
+}
+
 .light-box {
     background-color: rgb(243,234,195);
     border-color: rgb(145,218,242);
@@ -314,6 +311,11 @@ footer ul li div {
 .light-body {
     background-color: rgb(210,228,218);
     color: dark;
+}
+
+.light-shadow {
+    background-color: rgb(39, 94, 176);
+    box-shadow: 8px 8px rgb(89, 147, 175), 16px 16px rgb(145, 218, 242);
 }
 
 @media (max-width:800px){
