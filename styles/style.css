@@ -29,7 +29,7 @@ nav {
     border-right: none;
     background-color: #f0f8ff;
     width: 100%;
-    height: 85px;
+    /* height: 85px; */
     display: flex;
     align-items: center;
 }
@@ -46,10 +46,11 @@ nav img:hover{
     border-radius: 10%;
 }
 nav ul {
-    width: 800px;
+    /* width: 800px; */
+    width: auto;
 }
 nav li {
-    line-height: 30px;
+    line-height: 2rem;
 }
 nav li a {
     padding: 15px 40px;
@@ -133,6 +134,18 @@ main{
 /* style for passport image on homepage */
 .img-div img{
     border: 5px solid #003c5a;
+}
+
+.video-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-section div{
+    background-color: lightblue;
+    box-shadow: 8px 8px #0078b3, 16px 16px #003c5a;
+    padding:20px;
+    padding-top: 10px;
 }
 
 /* style for footer element */
@@ -241,11 +254,28 @@ footer ul li div {
     color: dark;
 }
 
-@media (max-width:900px){
-    nav{
-        display: block;
-
+@media (max-width:800px){
+    *{
+        margin: 0;
+        padding: 0;
     }
+    header{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    nav{
+        width: 100%;
+        height: 100%;
+    }
+    ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        
+    }
+
+
 }
 
 @media (orientation: landscape){
