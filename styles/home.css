@@ -12,7 +12,7 @@
     margin-left: 20px;
     background-color: #003c5a;
     box-shadow: 8px 8px #0078b3, 16px 16px lightblue;
-    height: 300px;
+    height: fit-content;
 }
 /* styles for Voyages2Go site title on homepage */
 .site-title{
@@ -78,9 +78,10 @@ div h3 {
     aspect-ratio: auto 692 / 389;
     height: 389px; */
     border: 5px solid #003c5a;
-    width: 756px;
+    /* width: 756px;
     aspect-ratio: auto 756 / 453;
-    height: 453px;
+    height: 453px; */
+    width: 70%;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -149,11 +150,13 @@ div h3 {
     padding: 2px 16px;
     color: white;
     width: 756px;
+    width: 70%;
 }
 
 .row {
     padding-top: 6px;
     width: 764px;
+    width: 70%;
     display: flex;
     justify-content: space-evenly;
 }
