@@ -71,7 +71,6 @@ nav li a:active{
 ul li {
     display: inline;
     list-style: none;
-    /* margin-left: 20px; */
 }
 
 a#home, a#contact, a#about {
@@ -220,4 +219,15 @@ footer ul li section {
 footer ul li div {
     text-align: center;
     height: 16px;
+}
+
+@media (max-width:900px){
+    nav{
+        display: block;
+
+    }
+}
+
+@media (orientation: landscape){
+
 }
