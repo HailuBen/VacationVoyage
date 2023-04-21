@@ -202,7 +202,7 @@ footer label {
 /* style for the select in the footer */
 
 footer select {
-    background-color: aliceblue;
+    background-color: rgba(255, 255, 255, 0);
     border: none;
     color: #0078b3;
     text-align: center;
