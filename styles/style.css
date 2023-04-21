@@ -14,9 +14,14 @@ body{
     flex-direction: column;
     background-color: #b0ddf35b;
 }
-/* header styles */
-/* header{} */
-
+/* a link styles */
+.a-link{
+    color: #6663ff;
+    transition: .3s ease;
+}
+.a-link:hover{
+    color: #00ccff;
+}
 /* nav bar styles */
 nav {
     border: 4px solid #add8e6;
