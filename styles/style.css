@@ -74,14 +74,14 @@ ul li {
     list-style: none;
 }
 
-a#home, a#contact, a#about {
+a#home, a#contact, a#about, a#paris, a#grandcanyon, a#rome, a#toronto, a#tokyo, a#humber {
     color: #003c5a;
 }
 
 /* dropdown menu styles */
 .dropbtn {
     background-color: aliceblue;
-    color: #003c5a;
+    color: #0078b3;
     padding: 15px;
     font-size: 1em;
     font-weight: 600;
@@ -99,7 +99,7 @@ a#home, a#contact, a#about {
     z-index: 1;
 }
   .dropdown-content a {
-    color: #003c5a;
+    color: #0078b3;
     padding: 0px 10px;
     text-decoration: none;
     display: block;
@@ -130,6 +130,21 @@ main{
     margin: 0 80px;
 }
 
+.about{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    background-color: #0078b3;
+}
+.about div{
+    text-align: center;
+}
+.about div p{
+    color: white;
+    font-size: 20px;
+}
 
 /* style for passport image on homepage */
 .img-div img{
@@ -168,7 +183,6 @@ footer div.footer-links ul{
 div.footer-links ul li {
 
 }
-
 
 /* style for the unordered list in the footer element */
 
