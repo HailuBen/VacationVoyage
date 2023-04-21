@@ -139,6 +139,9 @@ main{
     width: 100%;
     background-color: #0078b3;
 }
+.about img{
+    border: 5px solid #003c5a;
+}
 .about div{
     text-align: center;
 }
@@ -150,17 +153,19 @@ main{
 /* contact section styles */
 .contact{
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    background-color: lightblue;
-    box-shadow: 8px 8px #0078b3, 16px 16px #003c5a;
-    padding: 2%;    
-    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    background-color: #0078b3;
+    color: white;
+}
+.contact img{
+    border: 5px solid #003c5a;
 }
 .contact div{
     margin-right: 5%;
     padding: 1% 2%;
-    background-color: lightblue;
 }
 .contact div:nth-child(1){
     padding-right: 7%;
