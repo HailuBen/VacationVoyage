@@ -56,17 +56,36 @@ function showSlides(n) {
     captionText.innerHTML = gallery[slideIndex-1].alt;
 }
 
+// Stores the current theme to be kept across other pages
+function initialTheme() {
+    if (!sessionStorage.theme) {
+        sessionStorage.theme = "default";
+    }
+    document.getElementById("mode").value = sessionStorage.theme;
+}
+
+// Used to switch between themes
 function themeSelector() {
     defaultMode();
     var option = document.getElementById("mode").value;
-    if(option == "dark"){
-        darkMode();
+    if(option == "default"){
+        sessionStorage.theme = "default";
     }
-    if(option == "light"){
+    else if(option == "dark"){
+        darkMode();
+        sessionStorage.theme = "dark";
+    }
+    else if(option == "light"){
         lightMode();
+        sessionStorage.theme = "light";
     }
 }
 
+// Necessary to initialize the option if it was changed in a previous page
+initialTheme();
+themeSelector();
+
+// Used to switch back to the default theme
 function defaultMode() {
     var element = document.getElementById("body");
     if(element.classList.contains("dark-body")){
@@ -95,6 +114,7 @@ function defaultMode() {
     }
 }
 
+// Used to switch to dark mode
 function darkMode() {
     var element = document.getElementById("body");
     if(!element.classList.contains("dark-body")){
@@ -114,6 +134,7 @@ function darkMode() {
     }
 }
 
+// Used to switch to light mode
 function lightMode() {
     var element = document.getElementById("body");
     if(!element.classList.contains("light-body")){
