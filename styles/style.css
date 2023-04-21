@@ -215,7 +215,7 @@ footer label {
 /* style for the select in the footer */
 
 footer select {
-    background-color: aliceblue;
+    background-color: rgba(255, 255, 255, 0);
     border: none;
     color: #0078b3;
     text-align: center;
@@ -232,6 +232,26 @@ footer ul li section {
 footer ul li div {
     text-align: center;
     height: 16px;
+}
+
+.dark-box {
+    background-color: rgb(28,31,32);
+    border-color: rgb(31,85,103);
+}
+
+.dark-body {
+    background-color: rgb(20,40,50);
+    color: white;
+}
+
+.light-box {
+    background-color: rgb(243,234,195);
+    border-color: rgb(145,218,242);
+}
+
+.light-body {
+    background-color: rgb(210,228,218);
+    color: dark;
 }
 
 @media (max-width:800px){

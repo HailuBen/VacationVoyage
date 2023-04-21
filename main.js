@@ -55,3 +55,80 @@ function showSlides(n) {
     // This will set the caption of the slideshow to the corresponding alt text of the current gallery selection.
     captionText.innerHTML = gallery[slideIndex-1].alt;
 }
+
+function themeSelector() {
+    defaultMode();
+    var option = document.getElementById("mode").value;
+    if(option == "dark"){
+        darkMode();
+    }
+    if(option == "light"){
+        lightMode();
+    }
+}
+
+function defaultMode() {
+    var element = document.getElementById("body");
+    if(element.classList.contains("dark-body")){
+        element.classList.remove("dark-body");
+    }
+    else if(element.classList.contains("light-body")){
+        element.classList.remove("light-body");
+    }
+    var boxes = document.getElementsByClassName("box");
+    for(i = 0; i < boxes.length; i++){
+        if(boxes[i].classList.contains("dark-box")){
+            boxes[i].classList.remove("dark-box");
+        }
+        else if(boxes[i].classList.contains("light-box")){
+            boxes[i].classList.remove("light-box");
+        }
+    }
+    var shadows = document.getElementsByClassName("shadow");
+    for(i = 0; i < shadows.length; i++){
+        if(shadows[i].classList.contains("dark-shadow")){
+            shadows[i].classList.remove("dark-shadow");
+        }
+        else if(shadows[i].classList.contains("light-shadow")){
+            shadows[i].classList.remove("light-shadow");
+        }
+    }
+}
+
+function darkMode() {
+    var element = document.getElementById("body");
+    if(!element.classList.contains("dark-body")){
+        element.classList.add("dark-body");
+    }
+    var boxes = document.getElementsByClassName("box");
+    for(i = 0; i < boxes.length; i++){
+        if(!boxes[i].classList.contains("dark-box")){
+            boxes[i].classList.add("dark-box");
+        }
+    }
+    var shadows = document.getElementsByClassName("shadow");
+    for(i = 0; i < shadows.length; i++){
+        if(!shadows[i].classList.contains("dark-shadow")){
+            shadows[i].classList.add("dark-shadow");
+        }
+    }
+}
+
+function lightMode() {
+    var element = document.getElementById("body");
+    if(!element.classList.contains("light-body")){
+        element.classList.add("light-body");
+    }
+    var boxes = document.getElementsByClassName("box");
+    for(i = 0; i < boxes.length; i++){
+        if(!boxes[i].classList.contains("light-box")){
+            boxes[i].classList.add("light-box");
+        }
+    }
+    var shadows = document.getElementsByClassName("shadow");
+    for(i = 0; i < shadows.length; i++){
+        if(!shadows[i].classList.contains("light-shadow")){
+            shadows[i].classList.add("light-shadow");
+        }
+    }
+}

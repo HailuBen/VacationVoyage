@@ -14,6 +14,7 @@
     box-shadow: 8px 8px #0078b3, 16px 16px lightblue;
     height: fit-content;
 }
+
 /* styles for Voyages2Go site title on homepage */
 .site-title{
     text-align: center;
@@ -123,7 +124,7 @@ div h3 {
 
 /* Position the "next button" to the right */
 .next {
-    right: 32%;
+    right: 30%;
     border-radius: 3px 0 0 3px;
 }
 
@@ -187,4 +188,14 @@ div h3 {
 
 .active, .gallery:hover {
     opacity: 1;
+}
+
+.dark-shadow {
+    background-color: rgb(0, 48, 72);
+    box-shadow: 8px 8px rgb(0, 96, 143), 16px 16px rgb(27, 73, 88);
+}
+
+.light-shadow {
+    background-color: rgb(39, 94, 176);
+    box-shadow: 8px 8px rgb(89, 147, 175), 16px 16px rgb(145, 218, 242);
 }
