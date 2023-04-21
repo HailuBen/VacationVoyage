@@ -1,3 +1,28 @@
+/* style for intro-section (map image and corresponding text) */
+.intro-section{
+    display: flex;
+    justify-content: center;
+}
+/* img-div styles (child 1 of intro-section) */
+.img-div{
+    
+}
+/* intro-div styles (child 2 of intro-section) */
+.intro-div{
+    margin-left: 20px;
+    background-color: #003c5a;
+    box-shadow: 8px 8px #0078b3, 16px 16px lightblue;
+}
+
+.site-title{
+    text-align: center;
+    margin-top: 0;
+}
+div h3 {
+    margin: 0;
+    padding-top: 10px;
+}
+
 /* style for the description container */
 .body {
     margin-left: 16px;
@@ -8,7 +33,7 @@
 }
 
 /* style for p in the description container */
-.body p {
+.body p, .intro-div p {
     padding: 8px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -129,6 +154,8 @@
     width: 120px;
     aspect-ratio: auto 120 / 70;
     height: 70px;
+    border: 3px solid #003c5a;
+
 }
 
 /* Add a transparency effect for thumnbail images */
