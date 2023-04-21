@@ -27,7 +27,7 @@
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 .site-title:hover{
-    box-shadow: inset 1412px 0 0 0 aliceblue;
+    box-shadow: inset 2000px 0 0 0 aliceblue;
     color: #003c5a;
 }
 
