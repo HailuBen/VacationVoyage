@@ -30,7 +30,6 @@ nav {
     /* height: 85px; */
     display: flex;
     align-items: center;
-    /* margin: 0 auto; */
 }
 nav img{
     display: inline;
@@ -190,8 +189,9 @@ main{
 }
 
 .video-section{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
 
 .video-section div{
