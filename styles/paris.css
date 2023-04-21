@@ -64,6 +64,11 @@
     top: 0;
 }
 
+/* style for slide image (large) */
+.slideImg{
+    border: 5px solid #003c5a;
+}
+
 /* Container for image text */
 .caption-container {
     margin-right: 50%;
