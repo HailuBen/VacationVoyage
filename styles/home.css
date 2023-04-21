@@ -172,17 +172,6 @@ div h3 {
 }
 
 .column img{
-    /* width: 96px;
-    aspect-ratio: auto 96 / 64;
-    height: 64px;
-
-    width: 87px;
-    aspect-ratio: auto 100 / 70;
-    height: 50px; */
-
-    width: 120px;
-    aspect-ratio: auto 120 / 70;
-    height: 70px;
     border: 3px solid #003c5a;
 
 }
