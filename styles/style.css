@@ -120,56 +120,51 @@ a#home, a#contact, a#about, a#paris, a#grandcanyon, a#rome, a#toronto, a#tokyo, 
     transition: .3s;
 }
 
-
-a#home, a#contact, a#about, a#paris {
-    color: #003c5a;
-}
-
 /* main styles */
 main{
     margin: 0 80px;
 }
 
-/* about section styles */
+/* about section, children styles */
 .about{
     display: flex;
     justify-content: center;
-    padding: 10px;
-    margin: 10px;
+    flex-wrap: wrap;
     width: 100%;
+    padding: 2%;
     background-color: #0078b3;
     background: rgb(0,120,179);
     background: linear-gradient(90deg, rgba(0,120,179,1) 0%, rgba(173,216,230,1) 100%);
 }
-.about img{
+.about img, .contact img{
     border: 5px solid #003c5a;
 }
 .about div{
     text-align: center;
+    width: 50%;
+}
+.about img{
+    margin: 1%;
 }
 .about div p{
     color: white;
     font-size: 20px;
 }
 
-/* contact section styles */
+/* contact section, children styles */
 .contact{
     display: flex;
     justify-content: center;
-    padding: 10px;
-    margin: 10px;
+    flex-wrap: wrap;
+    padding: 2%;
     width: 100%;
     background-color: #0078b3;
     background: rgb(0,120,179);
     background: linear-gradient(90deg, rgba(0,120,179,1) 0%, rgba(173,216,230,1) 100%);
     color: white;
 }
-.contact img{
-    border: 5px solid #003c5a;
-}
 .contact div{
     margin-right: 5%;
-    padding: 1% 2%;
 }
 .contact div:nth-child(1){
     padding-right: 7%;
