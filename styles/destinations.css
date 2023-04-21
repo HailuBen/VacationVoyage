@@ -100,6 +100,9 @@
     float: left;
     width: 20%;
 }
+.column img{
+    border: 3px solid #003c5a;
+}
 
 /* Add a transparency effect for thumnbail images */
 .gallery {
