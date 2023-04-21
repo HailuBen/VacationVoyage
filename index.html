@@ -6,11 +6,14 @@
     <!-- Meta tags are "empty" tags meaning no closing / -->
     <!-- "meta": tag, "name": attribute, -->
     <meta name="keywords" content="HTML, CSS, Web Design, Project"> <!-- if u want good SEO, use these tags -->
-    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAACVBMVEX/AP8AAAClAKUhFWdXAAAA7UlEQVR4nO3SwQ0AMAwCMZr9h84QlXhEvg2MSMrNK9cGEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISHhPO9dKedOqvISQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJPxoAXmgZYMl7Pp2AAAAAElFTkSuQmCC"> <!--Temp Icon-->
+    <!-- <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAACVBMVEX/AP8AAAClAKUhFWdXAAAA7UlEQVR4nO3SwQ0AMAwCMZr9h84QlXhEvg2MSMrNK9cGEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISHhPO9dKedOqvISQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJPxoAXmgZYMl7Pp2AAAAAElFTkSuQmCC">  -->
+    <!-- Temp Icon -->
+    <link rel="icon" href="img/logo-color.png" type="image/x-icon">
+
     <!-- VSCode additions: -->
     <meta charset="UTF-8">  <!-- Specifies the page's character encoding -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">  <!--  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Voyages2Go - Home</title> <!-- different on each page (if wanted)-->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
@@ -26,11 +29,11 @@
                         <button class="dropbtn">Destinations</button>
                         <div class="dropdown-content">
                             <a href="pages/paris.html">Paris</a>
-                            <a href="#">Tokyo</a>
-                            <a href="#">Toronto</a>                            
-                            <a href="#">Rome</a>  
-                            <a href="#">Humber</a>                            
-                            <a href="#">Grand Canyon</a>                            
+                            <a href="pages/tokyo.html">Tokyo</a>
+                            <a href="pages/toronto.html">Toronto</a>                            
+                            <a href="pages/rome.html">Rome</a>  
+                            <a href="pages/humber.html">Humber</a>                            
+                            <a href="pages/grandcanyon.html">Grand Canyon</a>                            
                         </div>
                     </li>
                     <li><a href="pages/contact.html">Contact</a></li>
@@ -39,14 +42,27 @@
             </nav>
         </header>
         <main>
-            <h3>Voyager 2 Presents:</h3>
-            <h1>Voyages2Go!</h1>
-            <div class="img-div">
-                <img src="img/home/passport-g956a3cfe5_1920.jpg" alt="A photo of a world map with a camera and a passport on top of it." width="500px">
-                <div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, adipisci.</p>
-                </div>
+            <div>
+                <h3>Voyager 2 Presents:</h3>
+                <h1 class="site-title">Voyages2Go!</h1>
             </div>
+
+            <section class="intro-section">
+                <div class="img-div">
+                    <img src="img/home/passport-g956a3cfe5_1920.jpg" alt="A photo of a world map with a camera and a passport on top of it." width="500px">
+                </div>
+                <div class="intro-div">
+                    <p>Welcome to the <span class="go-to">Voyages2Go</span> website, we hope you enjoy your stay. <br><br><br>The purpose of this site is to provide you with an easy-to-use and navigable site that includes many locations around the world to visit, and to make it easier for you to plan vacations or make vacation itineraries.
+                    </p>
+                    <br>
+                    <p>Life is short. Explore our wonderous world, before its too late. </p>
+                    <br>
+                    <p style="text-align: center;"><span class="go-to">Voyages2Go!</span></p>
+                    <p>Check out our Destinations below! ⬇ ⬇ ⬇</p>
+                </div>
+            </section>
+
+            <br>
             <br>
             <hr>
             <h1>Destinations</h1>
@@ -54,27 +70,43 @@
                 <div class="body">
                     <div class="description">
                         <!-- text provided by Google Bard -->
-                        <p>Paris, the capital of France, is one of the most popular tourist destinations in the world. Known for its iconic landmarks, world-class museums, and delicious food, Paris has something to offer everyone. - <span><a href="https://bard.google.com">Bard</a></span></p>
+                        <!-- Paris -->
+                        <p>Paris, the capital of France, is one of the most popular tourist destinations in the world. Known for its iconic landmarks, world-class museums, and delicious food, Paris has something to offer everyone. - <span><a class="a-link" href="https://bard.google.com">Bard</a></span></p>
+                        <p class="go-to-text">~<a class="a-link go-to-text" href="pages/paris.html">Go to<span class="go-to"> Paris</span></a>~</p>
                     </div>
                     <div class="description">
-                        <!-- text provided by ChatGPT -->
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <!-- text provided by Google Bard -->
+                        <!-- Humber -->
+                        <p>Humber College is a public college of applied arts and technology founded in 1967 in Toronto, Ontario, Canada. It is one of the largest colleges in the province, and boasts over 30,000 full-time and 57,000 part-time students spread across 150 programs, including bachelor's degree, diploma, certificate, post-graduate certificate and apprenticeship programs, across 40 fields of study.</p>
+                        <p>The home of the Humber Hawks has numerous food options, breathtaking architecture, gorgeous natural scenery especially at the <span><a class="a-link" href="https://humber.ca/arboretum/explore.html">Humber Arboretum</a></span>, and much more to explore.<br>Humber College is a great choice for students who are looking for a practical and hands-on education, and is a great choice for students who are looking to succeed in their chosen field. - <span><a class="a-link" href="https://bard.google.com">Bard</a></span></p>
+                        <p class="go-to-text">~<a class="a-link go-to-text" href="pages/humber.html">Go to<span class="go-to"> Humber</span></a>~</p>
                     </div>
                     <div class="description">
-                        <!-- text provided by ChatGPT -->
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <!-- text provided by Google Bard -->
+                        <!-- Rome -->
+                        <p>Rome is the capital of Italy and one of the most popular tourist destinations in the world. It is a city with a rich history and culture, dating back over 2,500 years. Rome is home to some of the most iconic landmarks in the world, including the Colosseum, the Roman Forum, and the Pantheon. The city is also home to many museums, churches, and other historical sites.    - <span><a class="a-link" href="https://bard.google.com">Bard</a></span></p>
+                        <p class="go-to-text">~<a class="a-link go-to-text" href="pages/rome.html">Go to<span class="go-to"> Rome</span></a>~</p>
                     </div>
                     <div class="description">
-                        <!-- text provided by ChatGPT -->
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <!-- text provided by Google Bard -->
+                        <!-- Tokyo -->
+                        <p>Tokyo is the capital of Japan and one of the most popular tourist destinations in the world. It is a city with a rich history and culture, as well as a vibrant and modern atmosphere.</p>
+                        <p>Tokyo is home to many iconic landmarks, including the Tokyo Tower, the Imperial Palace, and the Sensoji Temple. The city is also home to a wide variety of museums, art galleries, and theaters. Tokyo is a great place to enjoy Japanese food, from sushi and ramen to tempura and yakitori.    - <span><a class="a-link" href="https://bard.google.com">Bard</a></span></p>
+                        <p class="go-to-text">~<a class="a-link go-to-text" href="pages/tokyo.html">Go to<span class="go-to"> Tokyo</span></a>~</p>
                     </div>
                     <div class="description">
-                        <!-- text provided by ChatGPT -->
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <!-- text provided by Google Bard -->
+                        <!-- Toronto -->
+                        <p>Toronto is a vibrant and multicultural city with something to offer everyone. Home of the CN Tower one of the most iconic landmarks in Canada, Toronto is a great city to explore. From its world-class museums and art galleries to its professional sports teams and vibrant nightlife, Toronto has something for everyone.    - <span><a class="a-link" href="https://bard.google.com">Bard</a></span></p>
+                        <p class="go-to-text">~<a class="a-link go-to-text" href="pages/toronto.html">Go to<span class="go-to"> Toronto</span></a>~</p>
                     </div>
                     <div class="description">
-                        <!-- text provided by ChatGPT -->
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <!-- text provided by Google Bard -->
+                        <!-- Grand Canyon -->
+                        <p>The Grand Canyon is a steep-sided canyon carved by the Colorado River over millions of years. It is 277 miles (446 km) long, up to 18 miles (29 km) wide and attains a depth of over a mile (6,093 feet or 1,857 meters). The canyon and adjacent rim are contained within Grand Canyon National Park, a United States National Park that is managed by the National Park Service.</p>
+                        <p>The Grand Canyon is a place of great beauty and wonder. It is a place where people can come to experience the power of nature and the beauty of the American Southwest.    - <span><a class="a-link" href="https://bard.google.com">Bard</a></span></p>
+                        <p class="go-to-text">~<a class="a-link go-to-text" href="pages/grandcanyon.html">Go to<span class="go-to"> The Grand Canyon</span></a>~</p>
+
                     </div>
                 </div>
                 <div class="container">
@@ -142,7 +174,6 @@
                     </div>
                 </div>
 
-                <img src="img/passport-g956a3cfe5_1920.jpg" alt="" width="600px">
             </div>
 
         </main>
@@ -153,7 +184,7 @@
                     <li>Copyright&nbsp;&copy;&nbsp;2023 Voyager 2 Ltd.</li>
                     <li><a href="#">Terms of Service</a></li>
                     <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="pages/about.html">About Us</a></li>
                 </ul>
             </div>
             <div id="footer-social">

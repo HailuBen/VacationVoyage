@@ -6,14 +6,16 @@
     <!-- Meta tags are "empty" tags meaning no closing / -->
     <!-- "meta": tag, "name": attribute, -->
     <meta name="keywords" content="HTML, CSS, Web Design, Project"> <!-- if u want good SEO, use these tags -->
-    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAACVBMVEX/AP8AAAClAKUhFWdXAAAA7UlEQVR4nO3SwQ0AMAwCMZr9h84QlXhEvg2MSMrNK9cGEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISHhPO9dKedOqvISQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJPxoAXmgZYMl7Pp2AAAAAElFTkSuQmCC"> <!--Temp Icon-->
+    <!-- <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAACVBMVEX/AP8AAAClAKUhFWdXAAAA7UlEQVR4nO3SwQ0AMAwCMZr9h84QlXhEvg2MSMrNK9cGEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISHhPO9dKedOqvISQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJPxoAXmgZYMl7Pp2AAAAAElFTkSuQmCC">  -->
+    <!-- Temp Icon -->
+    <link rel="icon" href="../img/logo-color.png" type="image/x-icon">
     <!-- VSCode additions: -->
     <meta charset="UTF-8">  <!-- Specifies the page's character encoding -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">  <!--  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- -->
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/paris.css">
-    <title>About</title>
+    <link rel="stylesheet" href="../styles/destinations.css">
+    <title>Paris</title>
 </head>
 <body>
     <header>
@@ -25,16 +27,16 @@
                 <li class="dropdown">
                     <button class="dropbtn">Destinations</button>
                     <div class="dropdown-content">
-                        <a id="paris" href="#">Paris</a>
-                        <a href="#">Tokyo</a>
-                        <a href="#">Toronto</a>                            
-                        <a href="#">Rome</a>  
-                        <a href="#">Humber</a>                            
-                        <a href="#">Grand Canyon</a>                            
+                        <a id="paris" href="paris.html">Paris</a>
+                        <a id="tokyo" href="tokyo.html">Tokyo</a>
+                        <a id="toronto" href="toronto.html">Toronto</a>                            
+                        <a id="rome" href="rome.html">Rome</a>  
+                        <a id="humber" href="humber.html">Humber</a>                            
+                        <a id="grandcanyon" href="grandcanyon.html">Grand Canyon</a>                            
                     </div>
                 </li>
-                <li><a href="pages/contact.html">Contact</a></li>
-                <li><a href="pages/about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
@@ -77,27 +79,27 @@
             <div class="container">
                 <div class="slideShow">
                 <div class="slideNumber">1 / 5</div>
-                    <img src="../img/paris/eiffel.png" style="width:50%">
+                    <img class="slideImg" src="../img/paris/eiffel.png" style="width:50%">
                 </div>
             
                 <div class="slideShow">
                 <div class="slideNumber">2 / 5</div>
-                    <img src="../img/paris/garnier.png" style="width:50%">
+                    <img class="slideImg" src="../img/paris/garnier.png" style="width:50%">
                 </div>
             
                 <div class="slideShow">
                 <div class="slideNumber">3 / 5</div>
-                    <img src="../img/paris/louvre.png" style="width:50%">
+                    <img class="slideImg" src="../img/paris/louvre.png" style="width:50%">
                 </div>
             
                 <div class="slideShow">
                 <div class="slideNumber">4 / 5</div>
-                    <img src="../img/paris/orsay.png" style="width:50%">
+                    <img class="slideImg" src="../img/paris/orsay.png" style="width:50%">
                 </div>
             
                 <div class="slideShow">
                 <div class="slideNumber">5 / 5</div>
-                    <img src="../img/paris/triomphe.png" style="width:50%">
+                    <img class="slideImg" src="../img/paris/triomphe.png" style="width:50%">
                 </div>
             
                 <!-- Next and previous buttons -->
@@ -136,7 +138,7 @@
                 <li>Copyright&nbsp;&copy;&nbsp;2023 Voyager 2 Ltd.</li>
                 <li><a href="#">Terms of Service</a></li>
                 <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="../pages/about.html">About Us</a></li>
             </ul>
         </div>
         <div id="footer-social">
