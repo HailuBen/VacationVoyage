@@ -130,6 +130,7 @@ main{
     margin: 0 80px;
 }
 
+/* about section styles */
 .about{
     display: flex;
     justify-content: center;
@@ -145,6 +146,40 @@ main{
     color: white;
     font-size: 20px;
 }
+
+/* contact section styles */
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: lightblue;
+    box-shadow: 8px 8px #0078b3, 16px 16px #003c5a;
+    padding: 2%;    
+    width: 50%;
+}
+.contact div{
+    margin-right: 5%;
+    padding: 1% 2%;
+    background-color: lightblue;
+}
+.contact div:nth-child(1){
+    padding-right: 7%;
+    border-right: 5px solid aliceblue;
+}
+.contact div form input,.contact div form label,.contact div form button {
+    font-size: 16px;
+}
+.contact div form button{
+    background-color: aliceblue;
+    transition: .2s;
+}
+.contact div form button:hover{
+    background-color: #add8e6;
+}
+.contact div form button:active{
+    background-color: #80a2ad;
+}
+
 
 /* style for passport image on homepage */
 .img-div img{
