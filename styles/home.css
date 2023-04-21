@@ -13,11 +13,29 @@
     background-color: #003c5a;
     box-shadow: 8px 8px #0078b3, 16px 16px lightblue;
 }
-
+/* styles for Voyages2Go site title on homepage */
 .site-title{
     text-align: center;
     margin-top: 0;
+    color: #0078b3;
+    box-shadow: inset 0 1 0 0 white;
+    color: #54b3d6;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
+.site-title:hover{
+    box-shadow: inset 1412px 0 0 0 white;
+    color: #003c5a;
+}
+
+/* a link styles */
+.a-link{
+    color: #6663ff;
+    transition: .3s ease;
+}
+.a-link:hover{
+    color: #00ccff;
+}
+
 div h3 {
     margin: 0;
     padding-top: 10px;
