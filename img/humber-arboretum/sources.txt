@@ -1,0 +1,7 @@
+Humber_College_LRC_North-wikipedia : wikipedia
+
+Humber-Arboretm-flowers-purple-yelp : yelp.ca/biz_photos/humber-arboretum-toronto
+
+Frog-hanging-out-in-the-pond-yelp : yelp.ca/biz_photos/humber-arboretum-toronto
+
+others : humber.ca/arboretum

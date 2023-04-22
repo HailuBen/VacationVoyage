@@ -1,0 +1,5 @@
+casa-loma_casaloma_ca : casaloma.ca
+
+ROM_2022-04-21-ken-gee-google-maps : urtrips.com/en/royal-ontario-museum-toronto/
+
+others : pexels
