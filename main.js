@@ -1,3 +1,5 @@
+// The initial design and functionality of the slideshow was from W3Schools
+
 // Initializes the slide index
 let slideIndex = 1;
 showSlides(slideIndex);
