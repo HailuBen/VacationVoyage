@@ -21,6 +21,10 @@ function themeSelector() {
         lightMode();
         sessionStorage.theme = "light";
     }
+    else if(option == "color-blind"){
+        colorlessMode();
+        sessionStorage.theme = "color-blind";
+    }
 }
 
 // Necessary to initialize the option if it was changed in a previous page
@@ -33,16 +37,22 @@ function defaultMode() {
     if(element.classList.contains("dark-body")){
         element.classList.remove("dark-body");
     }
-    else if(element.classList.contains("light-body")){
+    if(element.classList.contains("light-body")){
         element.classList.remove("light-body");
+    }
+    if(element.classList.contains("colorless-body")){
+        element.classList.remove("colorless-body");
     }
     var boxes = document.getElementsByClassName("box");
     for(i = 0; i < boxes.length; i++){
         if(boxes[i].classList.contains("dark-box")){
             boxes[i].classList.remove("dark-box");
         }
-        else if(boxes[i].classList.contains("light-box")){
+        if(boxes[i].classList.contains("light-box")){
             boxes[i].classList.remove("light-box");
+        }
+        if(boxes[i].classList.contains("colorless-box")){
+            boxes[i].classList.remove("colorless-box");
         }
     }
     var shadows = document.getElementsByClassName("shadow");
@@ -50,8 +60,11 @@ function defaultMode() {
         if(shadows[i].classList.contains("dark-shadow")){
             shadows[i].classList.remove("dark-shadow");
         }
-        else if(shadows[i].classList.contains("light-shadow")){
+        if(shadows[i].classList.contains("light-shadow")){
             shadows[i].classList.remove("light-shadow");
+        }
+        if(shadows[i].classList.contains("colorless-shadow")){
+            shadows[i].classList.remove("colorless-shadow");
         }
     }
     var videos = document.getElementsByClassName("video");
@@ -59,8 +72,11 @@ function defaultMode() {
         if(videos[i].classList.contains("dark-video")){
             videos[i].classList.remove("dark-video");
         }
-        else if(videos[i].classList.contains("light-video")){
+        if(videos[i].classList.contains("light-video")){
             videos[i].classList.remove("light-video");
+        }
+        if(videos[i].classList.contains("colorless-video")){
+            videos[i].classList.remove("colorless-video");
         }
     }
 }
@@ -113,6 +129,31 @@ function lightMode() {
     for(i = 0; i < videos.length; i++){
         if(!videos[i].classList.contains("light-video")){
             videos[i].classList.add("light-video");
+        }
+    }
+}
+
+function colorlessMode() {
+    var element = document.getElementById("body");
+    if(!element.classList.contains("colorless-body")){
+        element.classList.add("colorless-body");
+    }
+    var boxes = document.getElementsByClassName("box");
+    for(i = 0; i < boxes.length; i++){
+        if(!boxes[i].classList.contains("colorless-box")){
+            boxes[i].classList.add("colorless-box");
+        }
+    }
+    var shadows = document.getElementsByClassName("shadow");
+    for(i = 0; i < shadows.length; i++){
+        if(!shadows[i].classList.contains("colorless-shadow")){
+            shadows[i].classList.add("colorless-shadow");
+        }
+    }
+    var videos = document.getElementsByClassName("video");
+    for(i = 0; i < videos.length; i++){
+        if(!videos[i].classList.contains("colorless-video")){
+            videos[i].classList.add("colorless-video");
         }
     }
 }
