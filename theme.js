@@ -54,6 +54,15 @@ function defaultMode() {
             shadows[i].classList.remove("light-shadow");
         }
     }
+    var videos = document.getElementsByClassName("video");
+    for(i = 0; i < videos.length; i++){
+        if(videos[i].classList.contains("dark-video")){
+            videos[i].classList.remove("dark-video");
+        }
+        else if(videos[i].classList.contains("light-video")){
+            videos[i].classList.remove("light-video");
+        }
+    }
 }
 
 // Used to switch to dark mode
@@ -74,6 +83,12 @@ function darkMode() {
             shadows[i].classList.add("dark-shadow");
         }
     }
+    var videos = document.getElementsByClassName("video");
+    for(i = 0; i < videos.length; i++){
+        if(!videos[i].classList.contains("dark-video")){
+            videos[i].classList.add("dark-video");
+        }
+    }
 }
 
 // Used to switch to light mode
@@ -92,6 +107,12 @@ function lightMode() {
     for(i = 0; i < shadows.length; i++){
         if(!shadows[i].classList.contains("light-shadow")){
             shadows[i].classList.add("light-shadow");
+        }
+    }
+    var videos = document.getElementsByClassName("video");
+    for(i = 0; i < videos.length; i++){
+        if(!videos[i].classList.contains("light-video")){
+            videos[i].classList.add("light-video");
         }
     }
 }

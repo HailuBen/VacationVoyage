@@ -194,7 +194,7 @@ main{
     align-content: center;
 }
 
-.video-section div{
+.video{
     background-color: lightblue;
     box-shadow: 8px 8px #0078b3, 16px 16px #003c5a;
     padding:20px;
@@ -301,6 +301,11 @@ footer ul li div {
     box-shadow: 8px 8px rgb(0, 96, 143), 16px 16px rgb(27, 73, 88);
 }
 
+.dark-video {
+    background-color: rgb(27, 73, 88);
+    box-shadow: 8px 8px rgb(0, 96, 143), 16px 16px rgb(0, 48, 72);
+}
+
 .light-box {
     background-color: rgb(243,234,195);
     border-color: rgb(145,218,242);
@@ -314,6 +319,11 @@ footer ul li div {
 .light-shadow {
     background-color: rgb(39, 94, 176);
     box-shadow: 8px 8px rgb(89, 147, 175), 16px 16px rgb(145, 218, 242);
+}
+
+.light-video {
+    background-color: rgb(145, 218, 242);
+    box-shadow: 8px 8px rgb(89, 147, 175), 16px 16px rgb(39, 94, 176);
 }
 
 @media (max-width:800px){
